@@ -18,8 +18,6 @@ config.yaml
 secrets.json
 credentials.json
 
-# Notebooks con outputs (pueden contener tokens en celdas ejecutadas)
-*.ipynb
 # Distribution / packaging
 .Python
 build/
