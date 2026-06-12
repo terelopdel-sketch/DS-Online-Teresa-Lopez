@@ -12,18 +12,18 @@ Se han corregido;Han corregido muchos fallos pero el diseño es contrario al ped
 Parece que va mejor.;No se cuelga tanto;4;positive;negative;1;-0.8334875979937725
 Dice q hay una nueva versión?;Xq no me sale la opción de actualizarla entonces?;9;negative;negative;1;-0.8384665315151861
 Útil;Falta opción;4;positive;negative;1;-0.8885590350462715
-Me indica una nueva version;Dice que existe una nueva version, pero no sale actualizacion, e probado a borrarla y volver a instalarla, pero el mensaje sigue apareciendo;23;negative;negative;1;-1.002696144743075
-No me funciona;Mui buena pero a veces no acen;14;negative;negative;1;-1.0832692852163408
-Hay que mejorar;No funcionan las notificaciones, y deberían… Por lo demás correcto;20;positive;negative;1;-1.0981097654004746
-Muy bien ..pero;…;26;negative;negative;1;-1.1044687905632284
-No va;Pero esta bloqueado y no me funciona;7;positive;negative;1;-1.1122230773375148
-Bien;No es precisa del todo;5;positive;negative;1;-1.2754114957137634
-Bastante bien;Muy útil, pero hay …;22;positive;negative;1;-1.2860092681818858
-Muy buena idea;Aun faltan muchos;13;positive;negative;1;-1.455639534574406
-No remata...;En que se basa?...no termina de cuadrarme...;7;negative;negative;1;-1.4794328016280442
-Note 3;Esta bien la aplicación pero se nota k....sin mas comentarios.;18;negative;negative;1;-1.4983055361035678
-Es buena;No me deja;4;positive;negative;1;-1.780889062388097
-Ya funciona;Errores corregidos.;2;positive;negative;1;-2.276469027404202
+Me indica una nueva version;Dice que existe una nueva version, pero no sale actualizacion, e probado a borrarla y volver a instalarla, pero el mensaje sigue apareciendo;23;negative;negative;1;-1.002.696.144.743.070
+No me funciona;Mui buena pero a veces no acen;14;negative;negative;1;-10.832.692.852.163.400
+Hay que mejorar;No funcionan las notificaciones, y deberían… Por lo demás correcto;20;positive;negative;1;-10.981.097.654.004.700
+Muy bien ..pero;…;26;negative;negative;1;-11.044.687.905.632.200
+No va;Pero esta bloqueado y no me funciona;7;positive;negative;1;-11.122.230.773.375.100
+Bien;No es precisa del todo;5;positive;negative;1;-12.754.114.957.137.600
+Bastante bien;Muy útil, pero hay …;22;positive;negative;1;-12.860.092.681.818.800
+Muy buena idea;Aun faltan muchos;13;positive;negative;1;-1.455.639.534.574.400
+No remata...;En que se basa?...no termina de cuadrarme...;7;negative;negative;1;-14.794.328.016.280.400
+Note 3;Esta bien la aplicación pero se nota k....sin mas comentarios.;18;negative;negative;1;-14.983.055.361.035.600
+Es buena;No me deja;4;positive;negative;1;-1.780.889.062.388.090
+Ya funciona;Errores corregidos.;2;positive;negative;1;-2.276.469.027.404.200
 Sobre permisos;Permisos a tus fotos, llamadas, conexiones wifi, etc. No nos damos cuenta pero con toda la info. que compartimos con estas apk. Nos pueden quitar nuestra intimidad. Apk borrada.;29;positive;positive;1;0.10767141790243917
 identificacion de user;Estaría bien que cada. Cuando tienes más de una no pone a cual corresponde y;30;negative;positive;2;-0.0626158036127862
 Fantastica;Aunque todo es mejorable le doy estrellas por su enorme utilidad…;63;positive;positive;2;-0.06328214227918394
@@ -36,7 +36,7 @@ Demasiados feaute;A ver......tiene muchísimos ….no mola nada;63;negative;nega
 Bien;Se podría mejorar haciendo uso del ,,,;45;positive;negative;2;-0.7478047635470271
 Mucho que mejorar;La interfaz de usuario es pésima, no hay por donde cogerla. Lo ideal sería seguir Material Design de Google y no perder el tiempo con interfaces feas.;27;positive;negative;2;-0.769308686900702
 No pude FINALIZAR!!!!;La APP no se cierra nunca. … Tengo que desinstalarla y reinstalarla cada vez que quiera usarla;32;negative;negative;2;-0.9501209717417881
-No te hacen caso;No veo lógico ni competitivo ni de calidad…;103;negative;negative;2;-1.7072675742817744
+No te hacen caso;No veo lógico ni competitivo ni de calidad…;103;negative;negative;2;-17.072.675.742.817.700
 Avitar;…;22;negative;positive;2;0.05284059831051055
 Donde esta el Catalán;Con eso esta dicho todo. Y quede claro que no tengo nada contra el idioma de Cervantes (no como otros).;20;positive;positive;2;0.057927909239582936
 Imprescindible;Desde que la tengo hace meses que no…;27;positive;positive;2;0.07377855452117438
@@ -127,8 +127,8 @@ Me gusta;Es una ayuda;3;;positive;3;0.2977907584894947
 Jose;Es verdad lo que cuenta...;5;negative;positive;3;0.3015209006692449
 eficaz;A mi me gusta.si;22;positive;positive;3;0.30842387138567967
 Buenisima!;Muy precisa;2;positive;positive;3;0.3104676549447563
-Buena;Muy bueno;2;positive;positive;3;2.066293714165454
-Recomendable;Recomendable;1;positive;positive;3;2.4949019031120727
+Buena;Muy bueno;2;positive;positive;3;2.066.293.714.165.450
+Recomendable;Recomendable;1;positive;positive;3;24.949.019.031.120.700
 Ahora si va mucho mejor;La nueva actualización funciona bien. Ahora sí;7;positive;positive;4;0.10711075562158764
 Ahora si. Todo perfecto;Es muy útil y funciona muy bien. El único problema que tenia es que no me funcionaba…;38;positive;positive;2;0.13676550040935065
 Muy util;Pero lo ideal solo seria…;49;positive;positive;2;0.14560205757193667
@@ -155,7 +155,7 @@ Genial;Me parece fantástica me esta siendo súper útil por diversos motivos e 
 Genial esta versión;Cumple las expectativas y en;25;positive;positive;4;0.8135213140892275
 Me encanta!;Buenisima aplicación, la deberían de tener … Muy recomendable.;30;positive;positive;4;0.8709106029180158
 Genial!;Una aplicación muy buena, lo único que cambiaría sería … Por lo demás perfecta;19;positive;positive;4;0.9115975679701867
-Buena aplica;Aplicacion muy buena y la mejora a sido muy buena!;10;positive;positive;4;2.0785325950993263
+Buena aplica;Aplicacion muy buena y la mejora a sido muy buena!;10;positive;positive;4;20.785.325.950.993.200
 Muy buena;Siempre viene bien....;4;positive;positive;5;0.31941155594564963
 aora si;Gracias;3;positive;positive;5;0.33554752905825097
 Genial;Hasta la fecha … La recomiendo;9;positive;positive;5;0.340635632699804
@@ -207,52 +207,52 @@ Ahora va bien;Cambios para mejor solucionados muchos problemas .va muy bien la a
 de utilidad;Muy buena, y muy util para;9;;positive;5;0.9833436469925811
 Buena herramienta;Me parece genial.;3;;positive;5;0.9845039874196955
 Magnifica;Es de las mejores app que e probado y es;15;positive;positive;4;0.9875334198695158
-Buena;Muy buena app para;7;positive;positive;5;1.0158067027225908
-app muy buena;Me parece muy buena y de gran ayuda;8;positive;positive;5;1.0349163821288017
-Gran aplicacion;Sencilla de usar y muy util,;7;positive;positive;5;1.0805100826193086
-Buena;Es muy buena y muy;6;positive;positive;5;1.1124764077101597
-Ya funciona;Ya va como empezó, sin problemas, muy útil para los que;18;positive;positive;4;1.1176293984723555
-Buena;MUY UTIL. FACIIL MANEJO;4;positive;positive;5;1.1324859398915716
-Perfecta;Fenomenal!;1;positive;positive;5;1.165488007226509
-Me gusta;Fenomenal....;1;positive;positive;5;1.165488007226509
-Buena;Muy buena están haciendo un buen trabajo;7;positive;positive;5;1.1738691703782254
-Va genial;Lo recomiendo :-);3;positive;positive;5;1.1755643481282338
-una makina;muy practico;2;positive;positive;5;1.2045016189965068
-Muy util;Es muy util,y muy buena;5;positive;positive;5;1.2131584025905637
-bueno;Bueno;1;positive;positive;5;1.2139421714046004
-Muy buena;Con la nueva actualización va de lujo, arreglados todos los fallos, muy buena aplicación;14;positive;positive;4;1.2520745197362697
-Noe;Una maravilla;2;positive;positive;5;1.2712604743582523
-Estupenda!;Una gran ayuda!;3;positive;positive;5;1.2940112542762372
-Muy buena aplicacion;Muy bien pensado!!funkciona a!;6;positive;positive;5;1.3622623939891931
-Simplemente perfecto;Muy útil;2;positive;positive;5;1.3795299147000695
-Recomendada;Muy útil!;2;positive;positive;5;1.3795299147000695
-Probe y me gustó;Va genial. ...era lo que buscaba;6;;positive;5;1.3956457796568655
-Me guata bastante.;Funciona muy bien.;3;negative;positive;5;1.405696999784983
-muy buena;m parece una muy buena aplicación facil d interpretar;9;positive;positive;5;1.4137229404687164
-ahora si!!!;ahora si,perfecto,gracias!!!!;2;positive;positive;5;1.4227142158206205
-Muy buena aplicacion;Funciona muy bien y es muy util;7;positive;positive;5;1.4250767923350358
-Genial;De momento va todo genial;5;positive;positive;5;1.4969270885723798
-estupenda ami me va genial gracias y sigan mejorandola;estupenda ami me va genial gracias y sigan mej;9;;positive;5;1.5277968041247558
-Ok;Muy bien;2;positive;positive;5;1.5933008062007696
-Muy bien;Muy bien...;2;;positive;5;1.5933008062007696
-Recomendable;Muy buena aplicación.;3;positive;positive;5;1.6308998956057812
-Muy buena;Excelente aplicacion. Muy completa con;15;positive;positive;4;1.7698177425486767
-Genial;Fantástica;1;positive;positive;5;1.837082362558044
-util;Muy buena me gusta mucho;5;positive;positive;5;1.8818057000064565
-Excelente;Muy buena app;3;positive;positive;5;1.94386241769239
-FANTASTICA;Muy buena app;3;positive;positive;5;1.94386241769239
-Necesita mejorar.;Excelente App!;2;positive;positive;5;2.0529319053816817
-Encantada;Muy práctica y fácil de usar. 100%recomendable;7;positive;positive;5;2.05555639366319
-Muy buena;Muy buena;2;positive;positive;5;2.066293714165454
-Muy buena;Muy buena;2;positive;positive;5;2.066293714165454
-Muy buena aplicación me encanta;Muy bueno;2;;positive;5;2.066293714165454
-Muy buena aplicación;Funciona genial, muy buena aplicación.;5;positive;positive;5;2.098546667748921
-Buena;Estupenda!!!!!!;1;positive;positive;5;2.2203869835864225
-Muy buena;Funciona perfectamente;2;positive;positive;5;2.295085568258301
-Genial;Me encanta;2;;positive;5;2.3330127336909143
-Excelente;Recomendable;1;positive;positive;5;2.4949019031120727
-Muy buena aplicacion;Muy buena genial;3;positive;positive;5;2.8148181335684743
-Buena;Genial;1;positive;positive;5;2.9243930861663596
-Wuau;Genial;1;positive;positive;5;2.9243930861663596
-Muy buena;Genial;1;positive;positive;5;2.9243930861663596
-Sg S5;Excelente y exacta;3;negative;positive;5;3.2645785544908428
+Buena;Muy buena app para;7;positive;positive;5;10.158.067.027.225.900
+app muy buena;Me parece muy buena y de gran ayuda;8;positive;positive;5;10.349.163.821.288.000
+Gran aplicacion;Sencilla de usar y muy util,;7;positive;positive;5;10.805.100.826.193.000
+Buena;Es muy buena y muy;6;positive;positive;5;11.124.764.077.101.500
+Ya funciona;Ya va como empezó, sin problemas, muy útil para los que;18;positive;positive;4;11.176.293.984.723.500
+Buena;MUY UTIL. FACIIL MANEJO;4;positive;positive;5;11.324.859.398.915.700
+Perfecta;Fenomenal!;1;positive;positive;5;1.165.488.007.226.500
+Me gusta;Fenomenal....;1;positive;positive;5;1.165.488.007.226.500
+Buena;Muy buena están haciendo un buen trabajo;7;positive;positive;5;11.738.691.703.782.200
+Va genial;Lo recomiendo :-);3;positive;positive;5;11.755.643.481.282.300
+una makina;muy practico;2;positive;positive;5;12.045.016.189.965.000
+Muy util;Es muy util,y muy buena;5;positive;positive;5;12.131.584.025.905.600
+bueno;Bueno;1;positive;positive;5;12.139.421.714.046.000
+Muy buena;Con la nueva actualización va de lujo, arreglados todos los fallos, muy buena aplicación;14;positive;positive;4;12.520.745.197.362.600
+Noe;Una maravilla;2;positive;positive;5;12.712.604.743.582.500
+Estupenda!;Una gran ayuda!;3;positive;positive;5;12.940.112.542.762.300
+Muy buena aplicacion;Muy bien pensado!!funkciona a!;6;positive;positive;5;13.622.623.939.891.900
+Simplemente perfecto;Muy útil;2;positive;positive;5;13.795.299.147.000.600
+Recomendada;Muy útil!;2;positive;positive;5;13.795.299.147.000.600
+Probe y me gustó;Va genial. ...era lo que buscaba;6;;positive;5;13.956.457.796.568.600
+Me guata bastante.;Funciona muy bien.;3;negative;positive;5;1.405.696.999.784.980
+muy buena;m parece una muy buena aplicación facil d interpretar;9;positive;positive;5;14.137.229.404.687.100
+ahora si!!!;ahora si,perfecto,gracias!!!!;2;positive;positive;5;14.227.142.158.206.200
+Muy buena aplicacion;Funciona muy bien y es muy util;7;positive;positive;5;14.250.767.923.350.300
+Genial;De momento va todo genial;5;positive;positive;5;14.969.270.885.723.700
+estupenda ami me va genial gracias y sigan mejorandola;estupenda ami me va genial gracias y sigan mej;9;;positive;5;15.277.968.041.247.500
+Ok;Muy bien;2;positive;positive;5;15.933.008.062.007.600
+Muy bien;Muy bien...;2;;positive;5;15.933.008.062.007.600
+Recomendable;Muy buena aplicación.;3;positive;positive;5;16.308.998.956.057.800
+Muy buena;Excelente aplicacion. Muy completa con;15;positive;positive;4;17.698.177.425.486.700
+Genial;Fantástica;1;positive;positive;5;1.837.082.362.558.040
+util;Muy buena me gusta mucho;5;positive;positive;5;18.818.057.000.064.500
+Excelente;Muy buena app;3;positive;positive;5;194.386.241.769.239
+FANTASTICA;Muy buena app;3;positive;positive;5;194.386.241.769.239
+Necesita mejorar.;Excelente App!;2;positive;positive;5;20.529.319.053.816.800
+Encantada;Muy práctica y fácil de usar. 100%recomendable;7;positive;positive;5;205.555.639.366.319
+Muy buena;Muy buena;2;positive;positive;5;2.066.293.714.165.450
+Muy buena;Muy buena;2;positive;positive;5;2.066.293.714.165.450
+Muy buena aplicación me encanta;Muy bueno;2;;positive;5;2.066.293.714.165.450
+Muy buena aplicación;Funciona genial, muy buena aplicación.;5;positive;positive;5;2.098.546.667.748.920
+Buena;Estupenda!!!!!!;1;positive;positive;5;22.203.869.835.864.200
+Muy buena;Funciona perfectamente;2;positive;positive;5;2.295.085.568.258.300
+Genial;Me encanta;2;;positive;5;23.330.127.336.909.100
+Excelente;Recomendable;1;positive;positive;5;24.949.019.031.120.700
+Muy buena aplicacion;Muy buena genial;3;positive;positive;5;28.148.181.335.684.700
+Buena;Genial;1;positive;positive;5;29.243.930.861.663.500
+Wuau;Genial;1;positive;positive;5;29.243.930.861.663.500
+Muy buena;Genial;1;positive;positive;5;29.243.930.861.663.500
+Sg S5;Excelente y exacta;3;negative;positive;5;32.645.785.544.908.400
