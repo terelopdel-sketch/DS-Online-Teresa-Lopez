@@ -154,11 +154,61 @@
   #main::-webkit-scrollbar { width: 6px; }
   #main::-webkit-scrollbar-track { background: transparent; }
   #main::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
+
+  /* ── Sidebar interactivo ────────────────────────── */
+  #sidebar { transition: width 0.3s ease, min-width 0.3s ease; }
+  #sidebar.collapsed { width: 60px; min-width: 60px; }
+  #sidebar.collapsed .sidebar-header .logo,
+  #sidebar.collapsed .sidebar-header .subtitle,
+  #sidebar.collapsed .sidebar-progress,
+  #sidebar.collapsed .nav-phase-title,
+  #sidebar.collapsed .nav-item span:not(.nav-num),
+  #sidebar.collapsed .nav-done { display: none; }
+  #sidebar.collapsed .nav-item { justify-content: center; padding: 10px; margin-right: 0; border-radius: 0; }
+  #sidebar.collapsed .nav-item .nav-num { margin: 0; }
+
+  .sidebar-toggle {
+    position: absolute; top: 12px; right: -14px;
+    width: 28px; height: 28px; border-radius: 50%;
+    background: var(--card-bg); border: 1.5px solid var(--border);
+    box-shadow: 0 2px 8px rgba(138,107,191,0.15);
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; z-index: 100; color: var(--purple-mid);
+    font-size: 0.75rem; transition: transform 0.3s, background 0.2s;
+    user-select: none;
+  }
+  .sidebar-toggle:hover { background: var(--accent-4); }
+  #sidebar.collapsed .sidebar-toggle { transform: rotate(180deg); }
+
+  /* Mini progress bar por fase en nav */
+  .nav-item { position: relative; }
+  .nav-phase-bar {
+    position: absolute; bottom: 0; left: 0;
+    height: 2px; background: var(--accent-1);
+    border-radius: 0 2px 2px 0;
+    width: 0%; transition: width 0.4s ease;
+    opacity: 0.7;
+  }
+  .nav-item.active .nav-phase-bar { opacity: 1; }
+
+  /* Tooltip en modo colapsado */
+  #sidebar.collapsed .nav-item { position: relative; }
+  #sidebar.collapsed .nav-item::after {
+    content: attr(data-label);
+    position: absolute; left: 56px; top: 50%; transform: translateY(-50%);
+    background: var(--purple-dark); color: white;
+    padding: 4px 10px; border-radius: 6px; font-size: 0.78rem;
+    white-space: nowrap; pointer-events: none;
+    opacity: 0; transition: opacity 0.15s;
+    z-index: 200; box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  #sidebar.collapsed .nav-item:hover::after { opacity: 1; }
 </style>
 </head>
 <body>
 
 <nav id="sidebar">
+  <div class="sidebar-toggle" id="sidebarToggle" title="Colapsar menú">◀</div>
   <div class="sidebar-header">
     <div class="logo">Guía ML</div>
     <div class="subtitle">Machine Learning paso a paso</div>
@@ -170,16 +220,16 @@
   </div>
   <div class="nav-phases">
     <div class="nav-phase-title">Fases</div>
-    <div class="nav-item active" onclick="scrollTo('phase1')"><span class="nav-num">1</span> Git Flow<span class="nav-done">✓</span></div>
-    <div class="nav-item" onclick="scrollTo('phase2')"><span class="nav-num">2</span> Business Case<span class="nav-done">✓</span></div>
-    <div class="nav-item" onclick="scrollTo('phase3')"><span class="nav-num">3</span> Data Understanding<span class="nav-done">✓</span></div>
-    <div class="nav-item" onclick="scrollTo('phase4')"><span class="nav-num">4</span> EDA Dirigido<span class="nav-done">✓</span></div>
-    <div class="nav-item" onclick="scrollTo('phase5')"><span class="nav-num">5</span> Feature Engineering<span class="nav-done">✓</span></div>
-    <div class="nav-item" onclick="scrollTo('phase6')"><span class="nav-num">6</span> Preprocesado<span class="nav-done">✓</span></div>
-    <div class="nav-item" onclick="scrollTo('phase7')"><span class="nav-num">7</span> Modelado<span class="nav-done">✓</span></div>
-    <div class="nav-item" onclick="scrollTo('phase8')"><span class="nav-num">8</span> Optimización<span class="nav-done">✓</span></div>
-    <div class="nav-item" onclick="scrollTo('phase9')"><span class="nav-num">9</span> Evaluación Final<span class="nav-done">✓</span></div>
-    <div class="nav-item" onclick="scrollTo('phase10')"><span class="nav-num">10</span> Persistencia<span class="nav-done">✓</span></div>
+    <div class="nav-item active" data-phase="phase1" data-label="Git Flow" onclick="navClick(this,'phase1')"><span class="nav-num">1</span> Git Flow<span class="nav-done">✓</span><span class="nav-phase-bar" id="pbar1"></span></div>
+    <div class="nav-item" data-phase="phase2" data-label="Business Case" onclick="navClick(this,'phase2')"><span class="nav-num">2</span> Business Case<span class="nav-done">✓</span><span class="nav-phase-bar" id="pbar2"></span></div>
+    <div class="nav-item" data-phase="phase3" data-label="Data Understanding" onclick="navClick(this,'phase3')"><span class="nav-num">3</span> Data Understanding<span class="nav-done">✓</span><span class="nav-phase-bar" id="pbar3"></span></div>
+    <div class="nav-item" data-phase="phase4" data-label="EDA Dirigido" onclick="navClick(this,'phase4')"><span class="nav-num">4</span> EDA Dirigido<span class="nav-done">✓</span><span class="nav-phase-bar" id="pbar4"></span></div>
+    <div class="nav-item" data-phase="phase5" data-label="Feature Engineering" onclick="navClick(this,'phase5')"><span class="nav-num">5</span> Feature Engineering<span class="nav-done">✓</span><span class="nav-phase-bar" id="pbar5"></span></div>
+    <div class="nav-item" data-phase="phase6" data-label="Preprocesado" onclick="navClick(this,'phase6')"><span class="nav-num">6</span> Preprocesado<span class="nav-done">✓</span><span class="nav-phase-bar" id="pbar6"></span></div>
+    <div class="nav-item" data-phase="phase7" data-label="Modelado" onclick="navClick(this,'phase7')"><span class="nav-num">7</span> Modelado<span class="nav-done">✓</span><span class="nav-phase-bar" id="pbar7"></span></div>
+    <div class="nav-item" data-phase="phase8" data-label="Optimización" onclick="navClick(this,'phase8')"><span class="nav-num">8</span> Optimización<span class="nav-done">✓</span><span class="nav-phase-bar" id="pbar8"></span></div>
+    <div class="nav-item" data-phase="phase9" data-label="Evaluación Final" onclick="navClick(this,'phase9')"><span class="nav-num">9</span> Evaluación Final<span class="nav-done">✓</span><span class="nav-phase-bar" id="pbar9"></span></div>
+    <div class="nav-item" data-phase="phase10" data-label="Persistencia" onclick="navClick(this,'phase10')"><span class="nav-num">10</span> Persistencia<span class="nav-done">✓</span><span class="nav-phase-bar" id="pbar10"></span></div>
   </div>
 </nav>
 
@@ -357,23 +407,29 @@ model:    <span class="st">"model: evaluación final RandomForest contra test �
         <div class="step-header" onclick="toggleStep(this)">
           <div class="step-num">6</div>
           <div class="step-title-wrap">
-            <div class="step-title">Entrega final</div>
-            <div class="step-subtitle">Merge a main</div>
+            <div class="step-title">Entrega final y tag <span class="en-term">Release Tag</span></div>
+            <div class="step-subtitle">Merge a main + tag v1.0 para marcar la entrega</div>
           </div>
           <span class="step-toggle">▾</span>
         </div>
         <div class="step-body">
-          <p class="step-desc">Cuando el proyecto está terminado y todo el código está en <code>develop</code>, se hace el merge final a <code>main</code>.</p>
+          <p class="step-desc">Cuando el proyecto está terminado y todo el código está en <code>develop</code>, se hace el merge final a <code>main</code> y se crea un tag que marca la versión de entrega.</p>
           <div class="code-block">
             <div class="code-header"><span class="code-lang">Bash · Git</span><button class="copy-btn" onclick="copyCode(this)">Copiar</button></div>
             <div class="code-content"><span class="cm"># Merge final de develop a main</span>
 git checkout main
 git merge develop
 git push origin main
-          </div></div>
+
+<span class="cm"># Crear tag de entrega</span>
+git tag -a v1.0 -m <span class="st">"Entrega final Proyecto ML"</span>
+git push origin v1.0</div>
+          </div>
+          <div class="tip-box"><strong>💡 Extra:</strong> El tag <code>v1.0</code> permite a los evaluadores acceder exactamente al estado del repositorio en el momento de la entrega, aunque después sigáis trabajando.</div>
           <ul class="checklist">
             <li onclick="toggleCheck(this)"><span class="check-box"></span><span>Todo el trabajo integrado en <code>develop</code> sin conflictos</span></li>
             <li onclick="toggleCheck(this)"><span class="check-box"></span><span>Merge final de <code>develop</code> a <code>main</code> realizado</span></li>
+            <li onclick="toggleCheck(this)"><span class="check-box"></span><span>Tag <code>v1.0</code> creado y publicado en remoto</span></li>
           </ul>
         </div>
       </div>
@@ -1200,24 +1256,85 @@ model_loaded = joblib.<span class="fn">load</span>(<span class="st">'src/models/
 </main>
 
 <script>
+  // ── Accordion de pasos ─────────────────────────
   function toggleStep(header) {
     header.parentElement.classList.toggle('open');
   }
+
+  // ── Checklist interactivo ──────────────────────
   function toggleCheck(li) {
     li.classList.toggle('checked');
     updateProgress();
+    updatePhaseProgress();
   }
+
+  // ── Progreso total ─────────────────────────────
   function updateProgress() {
-    const all = document.querySelectorAll('.checklist li');
+    const all  = document.querySelectorAll('.checklist li');
     const done = document.querySelectorAll('.checklist li.checked').length;
-    const pct = all.length > 0 ? Math.round((done / all.length) * 100) : 0;
+    const pct  = all.length > 0 ? Math.round((done / all.length) * 100) : 0;
     document.getElementById('progressBar').style.width = pct + '%';
     document.getElementById('progressCount').textContent = done + ' / ' + all.length + ' checks';
   }
-  function scrollTo(id) {
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+  // ── Progreso por fase (mini barra en nav) ──────
+  function updatePhaseProgress() {
+    const phases = ['phase1','phase2','phase3','phase4','phase5','phase6','phase7','phase8','phase9','phase10'];
+    phases.forEach((phId, i) => {
+      const block = document.getElementById(phId);
+      if (!block) return;
+      const all  = block.querySelectorAll('.checklist li').length;
+      const done = block.querySelectorAll('.checklist li.checked').length;
+      const pct  = all > 0 ? Math.round((done / all) * 100) : 0;
+      const bar  = document.getElementById('pbar' + (i + 1));
+      if (bar) bar.style.width = pct + '%';
+      // Mark nav item as done when 100%
+      const navItem = document.querySelector('[data-phase="' + phId + '"]');
+      if (navItem) navItem.classList.toggle('done', all > 0 && done === all);
+    });
   }
+
+  // ── Scroll suave al hacer click en nav ─────────
+  function navClick(el, id) {
+    const target = document.getElementById(id);
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // ── Resaltar fase activa al hacer scroll ───────
+  const mainEl   = document.getElementById('main');
+  const navItems = document.querySelectorAll('.nav-item');
+  const phaseIds = ['phase1','phase2','phase3','phase4','phase5','phase6','phase7','phase8','phase9','phase10'];
+
+  function updateActiveNav() {
+    const scrollTop = mainEl.scrollTop;
+    const viewH     = mainEl.clientHeight;
+    let current     = 0;
+    phaseIds.forEach((id, i) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      const rect = el.getBoundingClientRect();
+      const containerTop = mainEl.getBoundingClientRect().top;
+      if (rect.top - containerTop < viewH * 0.4) current = i;
+    });
+    navItems.forEach((item, i) => {
+      item.classList.toggle('active', i === current);
+    });
+    // Auto-scroll sidebar nav item into view
+    const activeItem = navItems[current];
+    if (activeItem) {
+      activeItem.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    }
+  }
+
+  mainEl.addEventListener('scroll', updateActiveNav, { passive: true });
+
+  // ── Colapsar/expandir sidebar ──────────────────
+  const sidebar = document.getElementById('sidebar');
+  document.getElementById('sidebarToggle').addEventListener('click', () => {
+    sidebar.classList.toggle('collapsed');
+  });
+
+  // ── Copiar código ──────────────────────────────
   function copyCode(btn) {
     const text = btn.closest('.code-block').querySelector('.code-content').innerText;
     navigator.clipboard.writeText(text).then(() => {
@@ -1226,18 +1343,10 @@ model_loaded = joblib.<span class="fn">load</span>(<span class="st">'src/models/
       setTimeout(() => { btn.textContent = 'Copiar'; btn.classList.remove('copied'); }, 2000);
     });
   }
-  const mainEl = document.getElementById('main');
-  const navItems = document.querySelectorAll('.nav-item');
-  const phases = ['phase1','phase2','phase3','phase4','phase5','phase6','phase7','phase8','phase9','phase10'];
-  mainEl.addEventListener('scroll', () => {
-    let current = 0;
-    phases.forEach((id, i) => {
-      const el = document.getElementById(id);
-      if (el && el.getBoundingClientRect().top < 200) current = i;
-    });
-    navItems.forEach((item, i) => item.classList.toggle('active', i === current));
-  });
+
+  // ── Init ───────────────────────────────────────
   updateProgress();
+  updatePhaseProgress();
 </script>
 </body>
 </html>
